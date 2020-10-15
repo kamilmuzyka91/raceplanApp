@@ -1,4 +1,4 @@
-# raceplanApp
+# RaceplanApp
 App for planning cycling races.
 
 ## How to use
