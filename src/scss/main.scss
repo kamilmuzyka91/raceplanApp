@@ -1,6 +1,18 @@
 @import "./reset";
 @import "./fonts";
 @import "./variables";
+@import "./mixins";
 
-// Dodatkowe style ogólne dla całej strony
-// body ff: roboto itp 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  font-size: $main-font-size;
+}
+
+.container {
+  max-width: 1352;
+  margin: 0 auto;
+}
