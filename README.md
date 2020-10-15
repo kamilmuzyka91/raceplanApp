@@ -3,5 +3,5 @@ App for planning cycling races.
 
 
 In the project I am using:
-- create-react-map,
+- create-react-app,
 - sass,
