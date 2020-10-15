@@ -1,9 +1,30 @@
-@import "./scss/fonts";
-
-.App {
-  text-align: center;
-  color:red;
-  font-size: 16px;
-  font-family: $main-font;
+@import "./scss/main.scss";
+// background-image: url("../assets/Ckechmark-1.svg");
+body {
+  background: chartreuse;
 }
-
+.App,
+.container {
+  @include mobile {
+    @include centerer;
+    h1 {
+      background: red;
+      text-align: center;
+      color: rgb(2, 1, 1);
+      font-size: px-rem(32);
+      font-family: $main-font;
+    }
+  }
+  @include tablet {
+    @include centerer;
+    h1 {
+      background: green;
+    }
+  }
+  @include notebook {
+    @include centerer;
+    h1 {
+      background: blue;
+    }
+  }
+}
