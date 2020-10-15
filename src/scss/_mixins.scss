@@ -1,0 +1,31 @@
+// breakpoints
+@mixin notebook {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// centerer somefing
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+// px to rem conversion
+@function px-rem($pxsize, $rembase: 16) {
+  @return ($pxsize/$rembase) + rem;
+}
