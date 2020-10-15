@@ -1,12 +1,11 @@
 @import "./scss/main.scss";
 // background-image: url("../assets/Ckechmark-1.svg");
 body {
-  background: chartreuse;
+  background: #fff;
 }
 .App,
 .container {
   @include mobile {
-    @include centerer;
     h1 {
       background: red;
       text-align: center;
@@ -16,13 +15,11 @@ body {
     }
   }
   @include tablet {
-    @include centerer;
     h1 {
       background: green;
     }
   }
   @include notebook {
-    @include centerer;
     h1 {
       background: blue;
     }

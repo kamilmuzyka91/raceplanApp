@@ -1,14 +1,10 @@
 import React from "react";
 import "./App.scss";
+import "./layouts/Register";
+import Register from "./layouts/Register";
 
 function App() {
-  return (
-    <>
-      <div className="App">
-        <h1>Hello Kamil... Succes!</h1>
-      </div>
-    </>
-  );
+  return <Register />;
 }
 
 export default App;
