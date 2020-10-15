@@ -5,8 +5,7 @@ App for planning cycling races.
 
 Check out demo page here: [demo](http://raceapp.netlify.com)
 
-## If you want to clone then:
-
+### If you want to clone then:
 * clone repo to your machine
 * run `npm i`
 * to start dev server, run `npm start`
