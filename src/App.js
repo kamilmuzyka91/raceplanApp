@@ -8,13 +8,11 @@ import Calendar from "./layouts/Calendar";
 import Contact from "./layouts/Contact";
 import Login from "./layouts/Login";
 import NotFound from "./layouts/NotFound";
-import Navigation from "./layouts/Navigation";
 
 class App extends Component {
   render() {
     return (
       <HashRouter>
-        <Navigation />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/userProfile/:userID" component={Profile} />
