@@ -1,8 +1,13 @@
 import React, { Component } from "react";
-
+import Navigation from "./Navigation";
 class Calendar extends Component {
   render() {
-    return <h1>Calendar</h1>;
+    return (
+      <>
+        <Navigation />
+        <h1>Calendar</h1>;
+      </>
+    );
   }
 }
 

@@ -1,1 +1,11 @@
 $main-font-size: 16px;
+
+$link: green;
+$visited-link:  green;
+$mouse-over-link: yellow; // po kliknięciu na mobile zostaje over link ??
+$active-link: black;
+
+$mobile-link: black;
+$mobile-visited-link:  black;
+$mouse-over-link: black; // po drugim klik na ten sam link kolor się zmieniał
+$mobile-active-link: black;

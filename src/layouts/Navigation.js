@@ -4,34 +4,34 @@ import { NavLink } from "react-router-dom";
 class Navigation extends Component {
   render() {
     return (
-      <nav>
-        <h1>LOGO</h1>
-        <ul>
-          <li>
-            <NavLink activeClassName="active" to="/">
+      <nav className="navigation__menu container">
+        <div className="navigation__menu__logo">Logo</div>
+        <ul className="navigation__menu__list">
+          <li className="navigation__menu__link">
+            <NavLink className="navigation__menu__link-a" to="/">
               Home
             </NavLink>
           </li>
-          <li>
-            <NavLink activeClassName="active" to="/calendar">
+          <li className="navigation__menu__link">
+            <NavLink className="active" to="/calendar">
               Kalendarz
             </NavLink>
           </li>
 
-          <li>
-            <NavLink activeClassName="active" to="/contact">
+          <li className="navigation__menu__link">
+            <NavLink className="active" to="/contact">
               Kontakt
             </NavLink>
           </li>
-          <li>
-            <NavLink activeClassName="active" to="/loginPage">
+          <li className="navigation__menu__link">
+            <NavLink className="active" to="/loginPage">
               Logowanie
             </NavLink>
-            <li>
-              <NavLink activeClassName="active" to="/userProfile/:userID">
-                Profil
-              </NavLink>
-            </li>
+          </li>
+          <li className="navigation__menu__link">
+            <NavLink className="active" to="/userProfile/:userID">
+              Profil
+            </NavLink>
           </li>
         </ul>
       </nav>

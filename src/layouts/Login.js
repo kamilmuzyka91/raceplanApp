@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+import Navigation from "./Navigation";
 
 class Login extends Component {
   render() {
-    return <h1>Logowanie komponent firebase</h1>;
+    return (
+      <>
+        <Navigation />
+        <h1>Logowanie - Sing In</h1>;
+      </>
+    );
   }
 }
 

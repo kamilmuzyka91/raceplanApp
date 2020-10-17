@@ -2,6 +2,7 @@
 @import "./fonts";
 @import "./variables";
 @import "./mixins";
+@import "./elements/navigation";
 
 * {
   box-sizing: border-box;
@@ -15,4 +16,35 @@ body {
 .container {
   max-width: 1352;
   margin: 0 auto;
+}
+
+a:link {
+  @include mobile {
+    color: $mobile-link;
+  }
+  color: $link;
+}
+
+/* visited link */
+a:visited {
+  @include mobile {
+    color: $mobile-visited-link;
+  }
+  color: $visited-link;
+}
+
+/* mouse over link */
+a:hover {
+  a:hover {
+    color: $mouse-over-link;
+  }
+  color: $mouse-over-link;
+}
+
+/* selected link */
+a:active {
+  @include mobile {
+    color: $mobile-active-link;
+  }
+  color: $active-link;
 }
