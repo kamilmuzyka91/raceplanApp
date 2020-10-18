@@ -17,17 +17,6 @@
   }
 }
 
-// centerer somefing
-@mixin centerer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  @include mobile {
-    top: 20%;
-  }
-}
-
 // px to rem conversion
 @function px-rem($pxsize, $rembase: 16) {
   @return ($pxsize/$rembase) + rem;

@@ -3,6 +3,7 @@
 @import "./variables";
 @import "./mixins";
 @import "./elements/navigation";
+@import "./elements/open";
 
 * {
   box-sizing: border-box;
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 1352;
+  max-width: 1350px;
   margin: 0 auto;
 }
 

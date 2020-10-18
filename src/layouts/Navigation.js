@@ -24,15 +24,16 @@ class Navigation extends Component {
             </NavLink>
           </li>
           <li className="navigation__menu__link">
-            <NavLink className="active" to="/loginPage">
-              Logowanie
-            </NavLink>
-          </li>
-          <li className="navigation__menu__link">
             <NavLink className="active" to="/userProfile/:userID">
               Profil
             </NavLink>
           </li>
+          <li className="navigation__menu__link">
+            <NavLink className="active" to="/loginPage">
+              Zaloguj
+            </NavLink>
+          </li>
+
         </ul>
       </nav>
     );

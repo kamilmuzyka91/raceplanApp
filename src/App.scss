@@ -6,8 +6,7 @@ body {
 .App,
 .container {
   @include mobile {
-    h1 {
-      background: red;
+    body {
       text-align: center;
       color: rgb(2, 1, 1);
       font-size: px-rem(32);
@@ -15,12 +14,12 @@ body {
     }
   }
   @include tablet {
-    h1 {
+    body {
       background: green;
     }
   }
   @include notebook {
-    h1 {
+    body {
       background: blue;
     }
   }
