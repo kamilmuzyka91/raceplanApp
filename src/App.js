@@ -14,6 +14,7 @@ import NotFound from "./layouts/NotFound";
 class App extends Component {
   render() {
     return (
+      <Home/>,
       <HashRouter>
         <Switch>
           <Route exact path="/" component={Home} />

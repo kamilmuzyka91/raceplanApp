@@ -1,11 +1,20 @@
 @include mobile {
   .navigation__menu {
     .navigation__menu__logo {
-      background: lighten(black, 50%);
+      background: lighten(black, 80%);
       opacity: 0.8;
       text-align: center;
       width: 100vw;
       padding: px-rem(15);
+      letter-spacing: px-rem(5);
+      font-weight: 500;
+      font-family: Pacifico;
+      font-size: px-rem(25);
+      .fa-biking {
+        margin-right: px-rem(10);
+        font-size: $faSize;
+        color: $logo-color;
+      }
     }
     display: flex;
     flex-direction: column;
@@ -21,8 +30,13 @@
         opacity: 0.8;
         border-radius: 35px;
         font-family: $main-font;
-        font-weight: 500;
+        font-weight: 700;
         letter-spacing: px-rem(4);
+        .svg-inline--fa {
+          margin-right: px-rem(10);
+          font-size: $faSize;
+          color: $fa-color;
+        }
       }
     }
   }
@@ -31,27 +45,105 @@
 @include tablet {
   .navigation__menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-    background: lighten(black, 50%);
+    background: lighten(#000, 5);
     font-weight: 600;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 100vw;
+    .navigation__menu__logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #32776f;
+      margin: px-rem(5);
+      border: 3px solid #32776f;
+      border-radius: 35px;
+      padding: 10px;
+      .fa-biking {
+        color: $logo-color;
+        margin: px-rem(5);
+        font-size: px-rem(25);
+      }
+    }
 
     .navigation__menu__list {
       display: flex;
       flex-direction: row;
+      font-size: px-rem(14);
       :hover {
-        background: rgb(83, 4, 4);
-        opacity: .5;
+        background: lighten(#606060, 20%);
+        opacity: 0.5;
       }
       .navigation__menu__link {
         font-weight: 500;
-        padding: px-rem(15) px-rem(65);
-        border-radius: 35px;
+        padding: px-rem(25) px-rem(25);
+        text-align: center;
+
+        .svg-inline--fa {
+          margin-right: 10px;
+          color: $fa-color;
+        }
       }
     }
   }
 }
+
+@include notebook {
+
+    .navigation__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+      background: yellow;
+      font-weight: 600;
+      opacity: 0.9;
+      width: 100vw;
+      .navigation__menu__logo {
+        width: 100%;
+        height: 50%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // text-align: center;
+        // color: #32776f;
+        // margin: px-rem(5);
+        // border: 3px solid #32776f;
+        // border-radius: 35px;
+        // padding: 10px;
+        // .fa-biking {
+        //   color: $logo-color;
+        //   margin: px-rem(5);
+        //   font-size: px-rem(25);
+        // }
+      }
+
+      .navigation__menu__list {
+        display: flex;
+        flex-direction: row;
+        font-size: px-rem(14);
+        :hover {
+          background: lighten(#606060, 20%);
+          opacity: 0.5;
+        }
+        .navigation__menu__link {
+          font-weight: 500;
+          padding: px-rem(25) px-rem(25);
+          text-align: center;
+
+          .svg-inline--fa {
+            margin-right: 10px;
+            color: $fa-color;
+          }
+        }
+      }
+    }
+  }
+

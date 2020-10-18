@@ -2,9 +2,10 @@
 @import "./fonts";
 @import "./variables";
 @import "./mixins";
+@import "./elements/home";
 @import "./elements/navigation";
 @import "./elements/open";
-
+@import '~video-react/styles/scss/video-react';
 * {
   box-sizing: border-box;
 }
@@ -19,33 +20,6 @@ body {
   margin: 0 auto;
 }
 
-a:link {
-  @include mobile {
-    color: $mobile-link;
-  }
-  color: $link;
-}
-
-/* visited link */
-a:visited {
-  @include mobile {
-    color: $mobile-visited-link;
-  }
-  color: $visited-link;
-}
-
-/* mouse over link */
-a:hover {
-  a:hover {
-    color: $mouse-over-link;
-  }
-  color: $mouse-over-link;
-}
-
-/* selected link */
-a:active {
-  @include mobile {
-    color: $mobile-active-link;
-  }
-  color: $active-link;
+.navigation__menu__link-a {
+  color: #074e3c;
 }

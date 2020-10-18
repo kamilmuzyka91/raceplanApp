@@ -1,11 +1,17 @@
+@import "./mixins";
+
 $main-font-size: 16px;
 
+$logo-color: #32776F;
+$fa-color: #32776f;
+$faSize: px-rem(30);
+
 $link: black;
-$visited-link:   black;
+$visited-link: black;
 $mouse-over-link: yellow; // po kliknięciu na mobile zostaje over link ??
 $active-link: black;
 
-$mobile-link: black;
-$mobile-visited-link:  black;
-$mouse-over-link: black; // po drugim klik na ten sam link kolor się zmieniał
-$mobile-active-link: black;
+// $mobile-link: black;
+// $mobile-visited-link: black;
+// $mouse-over-link: black; // po drugim klik na ten sam link kolor się zmieniał
+// $mobile-active-link: black;
